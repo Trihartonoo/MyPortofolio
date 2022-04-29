@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Coba-react/static/css/main.31d5a6d5.css",
-    "main.js": "/Coba-react/static/js/main.f8db83b0.js",
+    "main.js": "/Coba-react/static/js/main.b18a2749.js",
     "static/js/787.b2b4f2c1.chunk.js": "/Coba-react/static/js/787.b2b4f2c1.chunk.js",
     "static/media/RumahImpian.png": "/Coba-react/static/media/RumahImpian.543d8eac853dab8c5684.png",
     "static/media/FotoProfile.png": "/Coba-react/static/media/FotoProfile.5f75eb31cdc69ae4dfe4.png",
@@ -10,11 +10,11 @@
     "static/media/naufalSatu.png": "/Coba-react/static/media/naufalSatu.cccbd345901961ed2f01.png",
     "index.html": "/Coba-react/index.html",
     "main.31d5a6d5.css.map": "/Coba-react/static/css/main.31d5a6d5.css.map",
-    "main.f8db83b0.js.map": "/Coba-react/static/js/main.f8db83b0.js.map",
+    "main.b18a2749.js.map": "/Coba-react/static/js/main.b18a2749.js.map",
     "787.b2b4f2c1.chunk.js.map": "/Coba-react/static/js/787.b2b4f2c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d5a6d5.css",
-    "static/js/main.f8db83b0.js"
+    "static/js/main.b18a2749.js"
   ]
 }
