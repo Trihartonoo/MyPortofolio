@@ -16,16 +16,16 @@ export default function Skills() {
           <h2 className="text-2xl md:text-4xl relative">Skills</h2>
         </div>
         <div className="flex gap-1 md:gap-2 text-sm md:text-base my-2">
-          <div onClick={() => setActive('Language')} className="cursor-pointer border-b-2 border-transparent border-blue-600">
+          <div onClick={() => setActive('Language')} className="cursor-pointer border-b-2 border-transparent border-blue-500">
             Language
           </div>
-          <div onClick={() => setActive('CssFramework')} className="cursor-pointer border-b-2 border-transparent border-blue-600">
+          <div onClick={() => setActive('CssFramework')} className="cursor-pointer border-b-2 border-transparent border-blue-500">
             CssFramework
           </div>
-          <div onClick={() => setActive('JsFramework')} className="cursor-pointer border-b-2 border-transparent border-blue-600">
+          <div onClick={() => setActive('JsFramework')} className="cursor-pointer border-b-2 border-transparent border-blue-500">
             JsFramework
           </div>
-          <div onClick={() => setActive('Design')} className="cursor-pointer border-b-2 border-transparent border-blue-600">
+          <div onClick={() => setActive('Design')} className="cursor-pointer border-b-2 border-transparent border-blue-500">
             Design
           </div>
         </div>
