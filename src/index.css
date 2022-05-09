@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-base md:text-xl font-semibold text-gray-900;
+  }
+}
+@layer components {
+  .px-setting {
+    @apply px-5 md:px-10 lg:px-32;
+  }
+  .card-skills {
+    @apply w-10 h-10 bg-white shadow-xl flex items-center justify-center;
+  }
+
+  .coba-1 {
+    @apply absolute dark:bg-gray-900 bg-slate-200 dark:text-white inset-0 z-30 flex-col gap-10 items-center justify-center flex;
+  }
+  .coba-2 {
+    @apply absolute dark:bg-gray-900 bg-slate-200 dark:text-white inset-0 z-20 flex-col gap-10 items-center justify-center flex -translate-y-full duration-1000;
+  }
+  .hide-1 {
+    @apply hidden;
+  }
+  .hide-2 {
+    @apply block;
+  }
+  .underline {
+  }
+  .underline:hover .cobaunderline {
+    @apply translate-x-0 duration-1000;
+  }
+  .Skills-grid {
+    @apply grid items-center justify-center gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-8;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Sora', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
