@@ -7,7 +7,7 @@ function Profile() {
       <div className="text-left w-full">
         <div className="w-fit relative ">
           <UnderlineText />
-          <h2 className="text-2xl md:text-3xl lg:text-4xl relative mt-2">Profile</h2>
+          <h1>Profile</h1>
         </div>
         <p className="text-sm md:text-base lg:mt-4"> Perkenalkan saya Tri Hartono biasa dipanggil Tri. Saya junior front end development yang sudah mengerjakan beberapa project kecil. </p>
         <p className="text-sm md:text-base mt-2">

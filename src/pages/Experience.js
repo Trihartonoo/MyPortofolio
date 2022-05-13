@@ -71,10 +71,10 @@ function Experience() {
   //   });
   // }, []);
   return (
-    <div ref={ref} className="min-h-screen py-10 group px-setting relative">
+    <div ref={ref} className=" py-10 group px-setting relative">
       <div className=" w-fit mx-auto mb-4 relative z-0">
         <UnderlineText />
-        <h2 className="first-paragraph text-2xl md:text-4xl relative">Experience</h2>
+        <h1 className="first-paragraph">Experience</h1>
       </div>
       <div className="first w-full h-1/2  flex justify-end md:justify-start items-center relative">
         <div className=" absolute top-0 w-1/2 md:w-full left-0 h-full ">

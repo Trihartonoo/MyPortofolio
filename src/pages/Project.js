@@ -20,7 +20,7 @@ function Project() {
       <div className=" flex flex-col md:flex-row-reverse items-start md:items-center justify-between relative mb-4 ">
         <div className="w-fit h-fit relative overflow-hidden">
           <UnderlineText />
-          <h2 className="text-2xl md:text-4xl relative">Project</h2>
+          <h1>Project</h1>
         </div>
         <div className="flex items-center gap-4 text-xs md:text-md">
           <div>Web</div>
