@@ -16,16 +16,16 @@ export default function Skills() {
           <h1>Skills</h1>
         </div>
         <div className="flex gap-1 md:gap-2 text-sm md:text-base my-2">
-          <div onClick={() => setIsActive('Language')} className="border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900">
+          <div onClick={() => setIsActive('Language')} className={'border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900' + (isActive ? 'border-blue-600' : 'border-transparent')}>
             Language
           </div>
-          <div onClick={() => setIsActive('CssFramework')} className="border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900">
+          <div onClick={() => setIsActive('CssFramework')} className={'border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900' + (isActive ? 'border-blue-600' : 'border-transparent')}>
             CssFramework
           </div>
-          <div onClick={() => setIsActive('JsFramework')} className="border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900">
+          <div onClick={() => setIsActive('JsFramework')} className={'border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900' + (isActive ? 'border-blue-600' : 'border-transparent')}>
             JsFramework
           </div>
-          <div onClick={() => setIsActive('Design')} className="border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900">
+          <div onClick={() => setIsActive('Design')} className={'border-b-2 border-transparent text-gray-800 dark:text-slate-300 hover:text-gray-900' + (isActive ? 'border-blue-600' : 'border-transparent')}>
             Design
           </div>
         </div>
