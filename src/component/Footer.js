@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="bg-white/50 dark:bg-black/50">
-      <div className="md:flex flex-col items-center gap-4 px-setting md:py-10">
+    <div className="bg-blue-50 dark:bg-black/50">
+      <div className="md:flex flex-col items-center gap-4 px-setting py-10">
         <div className="md:w-1/2">
           <h1 className="mb-2">Contact Me</h1>
           <form className="flex flex-col gap-2 items-center justify-center px-4">

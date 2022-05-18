@@ -17,7 +17,7 @@ function Navbar() {
   window.addEventListener('scroll', changeBackground);
   return (
     // <nav className="bg-transparent w-full h-14 md:h-16 fixed z-20">
-    <nav className={navbar ? 'bg-white/50 dark:bg-gray-900/60 shadow-md duration-1000 w-full bg-opacity-10 h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
+    <nav className={navbar ? 'bg-blue-50 dark:bg-gray-900/60 shadow-md duration-1000 w-full bg-opacity-95 h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
       <div className="flex mx-3 md:mx-8 lg:mx-28 px-2 lg:px-4 items-center justify-between h-full relative z-20">
         <Link to="/*" className="w-8 h-8 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
           <svg className="w-5 h-5 fill-slate-200" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ function Navbar() {
             <rect x="26.3354" width="6.62526" height="5.13458" />
           </svg>
         </Link>
-        <div className="hidden md:flex items-center justify-center gap-4">
+        <div className="text-gray-900 dark:text-slate-200 flex items-center justify-center gap-4">
           <div>Home</div>
           <div>Profile</div>
           <div>Skills</div>
@@ -35,7 +35,7 @@ function Navbar() {
           <div>Experience</div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center">
           {/* DarkMode */}
           <div onClick={() => setTheme(colorTheme)} className="flex justify-center items-center mx-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full cursor-pointer shadow">
             {colorTheme === 'light' ? (

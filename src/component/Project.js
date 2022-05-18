@@ -23,7 +23,7 @@ function Project() {
           <UnderlineText />
           <h1>Project</h1>
         </div>
-        <div className="flex items-center gap-4 my-2 text-xs md:text-base">
+        <div className="flex items-center gap-4 my-2 text-sm md:text-base">
           <div onClick={() => setIsActive('Web')} className={isActive === 'Web' ? 'SkillsInActive' : 'Active '}>
             Web
           </div>

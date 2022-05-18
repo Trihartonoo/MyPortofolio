@@ -15,7 +15,7 @@ export default function Skills() {
           <UnderlineText />
           <h1>Skills</h1>
         </div>
-        <div className="flex gap-1 md:gap-2 text-xs md:text-base my-2">
+        <div className="flex gap-1 md:gap-2 text-sm md:text-base my-2">
           <div onClick={() => setIsActive('Language')} className={isActive === 'Language' ? 'SkillsInActive' : 'Active '}>
             Language
           </div>
