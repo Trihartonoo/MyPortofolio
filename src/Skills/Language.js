@@ -7,11 +7,8 @@ function Language() {
   return (
     <div className="Skills-grid">
       <CardSkills imgUrl={Html} />
+      <CardSkills imgUrl={Css} />
       <CardSkills imgUrl={JavaScript} />
-      <CardSkills imgUrl={Css} />
-      <CardSkills imgUrl={Html} />
-      <CardSkills imgUrl={Css} />
-      <CardSkills imgUrl={Html} />
     </div>
   );
 }
