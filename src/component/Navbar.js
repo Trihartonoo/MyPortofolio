@@ -27,7 +27,7 @@ function Navbar() {
             <rect x="26.3354" width="6.62526" height="5.13458" />
           </svg>
         </Link>
-        <div className="text-gray-900 dark:text-slate-200 flex items-center justify-center gap-4">
+        <div className="hidden md:flex text-gray-900 dark:text-slate-200 items-center justify-center gap-4">
           <div>Home</div>
           <div>Profile</div>
           <div>Skills</div>
@@ -35,7 +35,7 @@ function Navbar() {
           <div>Experience</div>
         </div>
 
-        <div className="hidden md:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           {/* DarkMode */}
           <div onClick={() => setTheme(colorTheme)} className="flex justify-center items-center mx-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full cursor-pointer shadow">
             {colorTheme === 'light' ? (
