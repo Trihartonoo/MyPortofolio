@@ -3,7 +3,7 @@ import UnderlineText from '../component/UnderlineText';
 
 function Profile() {
   return (
-    <div className="pt-20 pb-10 lg:pt-28 px-setting flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-10 lg:gap-20 group ">
+    <div className="pt-20 pb-10 md:pt-28 lg:pt-36 px-setting flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-10 lg:gap-20 group ">
       <div className="text-left w-full">
         <div className="w-fit relative ">
           <UnderlineText />

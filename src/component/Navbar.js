@@ -27,9 +27,16 @@ function Navbar() {
             <rect x="26.3354" width="6.62526" height="5.13458" />
           </svg>
         </Link>
+        <div className="hidden md:flex items-center justify-center gap-4">
+          <div>Home</div>
+          <div>Profile</div>
+          <div>Skills</div>
+          <div>Project</div>
+          <div>Experience</div>
+        </div>
 
-        {/* mobile menu */}
         <div className="flex items-center justify-center">
+          {/* DarkMode */}
           <div onClick={() => setTheme(colorTheme)} className="flex justify-center items-center mx-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full cursor-pointer shadow">
             {colorTheme === 'light' ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-100" viewBox="0 0 20 20" fill="currentColor">
@@ -45,8 +52,8 @@ function Navbar() {
               </svg>
             )}
           </div>
-
-          <div className="cursor-pointer flex items-center justify-center w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl" onClick={() => setNavbarOpen(!navbarOpen)}>
+          {/* mobile menu */}
+          <div className="cursor-pointer flex md:hidden items-center justify-center w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl" onClick={() => setNavbarOpen(!navbarOpen)}>
             {navbarOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-slate-200" viewBox="0 0 20 20" fill="currentColor">
                 <path
@@ -66,20 +73,16 @@ function Navbar() {
       {/* Menu Navbar */}
       <div
         className={
-          'fixed w-full transition px-setting grid md:grid-cols-2 bg-blue-100 dark:bg-gray-900 text-gray-800 dark:text-slate-200 inset-0 z-10  duration-1000 translate-x-full h-full items-center justify-center ' +
+          'fixed transition flex flex-col h-full items-center justify-center gap-10 px-setting bg-blue-100 dark:bg-gray-900 text-gray-800 dark:text-slate-200 inset-0 z-10  duration-1000 translate-x-full  ' +
           (navbarOpen ? ' translate-x-0' : 'translate-full')
         }
       >
-        <div className="">
-          <div>Address</div>
-          <div>Address</div>
-          <div>Address</div>
-        </div>
-        <div>
-          <div>Address</div>
-          <div>Address</div>
-          <div>Address</div>
-        </div>
+        <div>Home</div>
+        <div>Profile</div>
+        <div>Skills</div>
+        <div>Project</div>
+        <div>Experience</div>
+
         {/* <Link to="/" className="">
           Home
         </Link>
