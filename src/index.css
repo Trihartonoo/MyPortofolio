@@ -39,10 +39,10 @@
     @apply grid items-center justify-center gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-8;
   }
   .Active {
-    @apply text-gray-700 border-b-2 border-transparent hover:text-gray-900;
+    @apply text-gray-700 hover:text-gray-900 cursor-pointer dark:text-slate-200;
   }
   .SkillsInActive {
-    @apply border-blue-600 text-gray-700 border-b-2 hover:text-gray-900;
+    @apply border-blue-600 text-black border-b-2 hover:text-gray-900 cursor-pointer dark:text-slate-200;
   }
 }
 

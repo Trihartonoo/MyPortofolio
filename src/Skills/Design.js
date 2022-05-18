@@ -1,6 +1,6 @@
 import React from 'react';
 import Figma from '../Img/Figma.png';
-import CardSkills from '../component/cardSkills';
+import CardSkills from './cardSkills';
 
 function Design() {
   return (

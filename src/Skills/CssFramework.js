@@ -1,13 +1,12 @@
 import React from 'react';
 import Tailwindcss from '../Img/TailwindCss.png';
 import Bootstrap from '../Img/bootstrap.png';
-import Html from '../Img/Html.png';
-import CardSkills from '../component/cardSkills';
-function JsFramework() {
+import CardSkills from './cardSkills';
+
+function CssFramework() {
   return (
     <div>
       <div className="Skills-grid">
-        <CardSkills imgUrl={Html} />
         <CardSkills imgUrl={Tailwindcss} />
         <CardSkills imgUrl={Bootstrap} />
       </div>
@@ -15,4 +14,4 @@ function JsFramework() {
   );
 }
 
-export default JsFramework;
+export default CssFramework;

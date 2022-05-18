@@ -2,7 +2,7 @@ import React from 'react';
 import Html from '../Img/Html.png';
 import Css from '../Img/Css.png';
 import JavaScript from '../Img/JavaScript.png';
-import CardSkills from '../component/cardSkills';
+import CardSkills from './cardSkills';
 function Language() {
   return (
     <div className="Skills-grid">
