@@ -17,7 +17,7 @@ function Project() {
   const [isActive, setIsActive] = useState('Web');
 
   return (
-    <div className="px-setting">
+    <div className="px-setting" id="Project">
       <div className=" flex flex-col md:flex-row-reverse items-start md:items-center justify-between relative mb-4 ">
         <div className="w-fit h-fit relative overflow-hidden">
           <UnderlineText />

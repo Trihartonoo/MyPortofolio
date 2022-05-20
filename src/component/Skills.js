@@ -9,7 +9,7 @@ export default function Skills() {
   const [isActive, setIsActive] = useState('Language');
 
   return (
-    <div className="mb-10 md:mt-10 md:mb-20 px-setting">
+    <div className="mb-10 md:mt-10 md:mb-20 px-setting" id="Skills">
       <div className="flex flex-col md:flex-row items-end md:items-center justify-between">
         <div className="w-fit h-fit relative overflow-hidden">
           <UnderlineText />

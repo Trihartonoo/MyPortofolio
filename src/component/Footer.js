@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="bg-blue-50 dark:bg-black/50">
+    <div className="bg-blue-50 dark:bg-black/50" id="Contact">
       <div className="md:flex flex-col items-center gap-4 px-setting py-10">
         <div className="md:w-1/2">
           <h1 className="mb-2">Contact Me</h1>

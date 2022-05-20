@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+// import { Link } from 'react-router-dom';
 import useDarkMode from '../Hook/useDarkMode';
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [colorTheme, setTheme] = useDarkMode();
   const [navbar, setNavbar] = useState(false);
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -19,21 +23,43 @@ function Navbar() {
     // <nav className="bg-transparent w-full h-14 md:h-16 fixed z-20">
     <nav className={navbar ? 'bg-blue-50 dark:bg-gray-900/60 shadow-md duration-1000 w-full bg-opacity-95 h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
       <div className="flex mx-3 md:mx-8 lg:mx-28 px-2 lg:px-4 items-center justify-between h-full relative z-20">
-        <Link to="/*" className="w-8 h-8 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
-          <svg className="w-5 h-5 fill-slate-200" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.1677 6.62524H19.8758H33.1263V23.3126V40C33.1263 40 28.8684 28.9091 26.5011 27.412C24.2937 26.0161 19.7102 26.501 19.7102 26.501C19.7102 26.501 30.8075 13.2505 26.5011 13.2505C22.6201 13.2505 16.5632 13.2505 16.5632 13.2505H13.1677V6.62524Z" />
-            <path d="M5.63159 0H12.2568V19.6687V30.2277C12.2568 33.8716 23.2713 40 23.2713 40H14.2444H9.85519H7.61917H6.7082H5.63159V38.5559V37.5259V35.4658V31.3458V23.1056V0Z" />
-            <rect y="6.62524" width="8.77847" height="6.62526" />
-            <rect x="26.3354" width="6.62526" height="5.13458" />
-          </svg>
-        </Link>
-        <div className="hidden md:flex text-gray-900 dark:text-slate-200 items-center justify-center gap-4">
-          <div>Home</div>
-          <div>Profile</div>
-          <div>Skills</div>
-          <div>Project</div>
-          <div>Experience</div>
-        </div>
+        <ul className="cursor-pointer w-8 h-8 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
+          <Link to="Home" spy={true} smooth={true} duration={500}>
+            <svg className="w-5 h-5 fill-slate-200" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.1677 6.62524H19.8758H33.1263V23.3126V40C33.1263 40 28.8684 28.9091 26.5011 27.412C24.2937 26.0161 19.7102 26.501 19.7102 26.501C19.7102 26.501 30.8075 13.2505 26.5011 13.2505C22.6201 13.2505 16.5632 13.2505 16.5632 13.2505H13.1677V6.62524Z" />
+              <path d="M5.63159 0H12.2568V19.6687V30.2277C12.2568 33.8716 23.2713 40 23.2713 40H14.2444H9.85519H7.61917H6.7082H5.63159V38.5559V37.5259V35.4658V31.3458V23.1056V0Z" />
+              <rect y="6.62524" width="8.77847" height="6.62526" />
+              <rect x="26.3354" width="6.62526" height="5.13458" />
+            </svg>
+          </Link>
+        </ul>
+        <ul className="hidden cursor-pointer md:flex items-center justify-center gap-4">
+          <li>
+            <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
+              Profile
+            </Link>
+          </li>
+          <li>
+            <Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="Project" spy={true} smooth={true} offset={-80} duration={500}>
+              Project
+            </Link>
+          </li>
+          <li>
+            <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+              Contact Me
+            </Link>
+          </li>
+        </ul>
 
         <div className="flex items-center justify-center">
           {/* DarkMode */}
@@ -71,28 +97,38 @@ function Navbar() {
         </div>
       </div>
       {/* Menu Navbar */}
-      <div
+      <ul
         className={
-          'fixed transition flex flex-col h-full items-center justify-center gap-10 px-setting bg-blue-100 dark:bg-gray-900 text-gray-800 dark:text-slate-200 inset-0 z-10  duration-1000 translate-x-full  ' +
-          (navbarOpen ? ' translate-x-0' : 'translate-full')
+          'fixed transition flex flex-col w-full justify-center gap-10 px-setting bg-blue-100 bg-opacity-90 dark:bg-gray-900 text-gray-800 dark:text-slate-200 h-screen top-0 z-10  duration-1000 translate-x-full ' +
+          (navbarOpen ? ' translate-x-1/2' : 'translate-full')
         }
       >
-        <div>Home</div>
-        <div>Profile</div>
-        <div>Skills</div>
-        <div>Project</div>
-        <div>Experience</div>
-
-        {/* <Link to="/" className="">
-          Home
-        </Link>
-        <Link to="/Profile" className="">
-          Profile
-        </Link>
-        <Link to="/Experience" className="">
-          Experience
-        </Link> */}
-      </div>
+        <li>
+          <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="Project" spy={true} smooth={true} offset={-80} duration={500}>
+            Project
+          </Link>
+        </li>
+        <li>
+          <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+            Contact Me
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 }
