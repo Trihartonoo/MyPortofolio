@@ -33,28 +33,28 @@ function Navbar() {
             </svg>
           </Link>
         </ul>
-        <ul className="hidden cursor-pointer md:flex items-center justify-center gap-4">
-          <li>
-            <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
+        <ul className={'hidden cursor-pointer md:flex items-center justify-center gap-4'}>
+          <li className="navItem">
+            <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
               Profile
             </Link>
           </li>
-          <li>
-            <Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>
+          <li className="navItem">
+            <Link to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
               Skills
             </Link>
           </li>
-          <li>
-            <Link to="Project" spy={true} smooth={true} offset={-80} duration={500}>
+          <li className="navItem">
+            <Link to="Project" spy={true} smooth={true} offset={-100} duration={500}>
               Project
             </Link>
           </li>
-          <li>
-            <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
+          <li className="navItem">
+            <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
               Experience
             </Link>
           </li>
-          <li>
+          <li className="navItem">
             <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
               Contact Me
             </Link>
@@ -103,27 +103,27 @@ function Navbar() {
           (navbarOpen ? ' translate-x-1/2' : 'translate-full')
         }
       >
-        <li>
+        <li className="navItem">
           <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
             Profile
           </Link>
         </li>
-        <li>
-          <Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>
+        <li className="navItem">
+          <Link to="Skills" spy={true} smooth={true} offset={-50} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
-          <Link to="Project" spy={true} smooth={true} offset={-80} duration={500}>
+        <li className="navItem">
+          <Link to="Project" spy={true} smooth={true} offset={-50} duration={500}>
             Project
           </Link>
         </li>
-        <li>
+        <li className="navItem">
           <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
             Experience
           </Link>
         </li>
-        <li>
+        <li className="navItem">
           <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
             Contact Me
           </Link>

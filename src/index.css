@@ -44,6 +44,13 @@
   .SkillsInActive {
     @apply border-blue-600 text-black border-b-2 hover:text-gray-900 cursor-pointer dark:text-slate-200;
   }
+  .navItem .active {
+    @apply border-blue-600 text-black border-b-2 hover:text-gray-900 cursor-pointer dark:text-slate-200;
+  }
+
+  .navItem :hover {
+    @apply border-blue-600 text-black border-b-2 hover:text-gray-900 cursor-pointer dark:text-slate-200;
+  }
 }
 
 body {
