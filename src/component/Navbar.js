@@ -21,7 +21,7 @@ function Navbar() {
   window.addEventListener('scroll', changeBackground);
   return (
     // <nav className="bg-transparent w-full h-14 md:h-16 fixed z-20">
-    <nav className={navbar ? 'bg-blue-50 dark:bg-gray-900/60 shadow-md duration-1000 w-full bg-opacity-95 h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
+    <nav className={navbar ? 'bg-blue-100 dark:bg-gray-900/60 shadow-md duration-1000 w-full bg-opacity-95 h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
       <div className="flex mx-3 md:mx-8 lg:mx-28 px-2 lg:px-4 items-center justify-between h-full relative z-20">
         <ul className="cursor-pointer w-8 h-8 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700">
           <Link to="Home" spy={true} smooth={true} duration={500}>
@@ -33,35 +33,35 @@ function Navbar() {
             </svg>
           </Link>
         </ul>
-        <ul className={'hidden cursor-pointer md:flex items-center justify-center gap-4'}>
-          <li className="navItem">
-            <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
-              Profile
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
-              Skills
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link to="Project" spy={true} smooth={true} offset={-100} duration={500}>
-              Project
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
-              Experience
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
-              Contact Me
-            </Link>
-          </li>
-        </ul>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center md:gap-2 lg:gap-4">
+          <ul className="hidden cursor-pointer md:flex items-center justify-center gap-4">
+            <li className="navItem">
+              <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
+                Profile
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
+                Skills
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="Project" spy={true} smooth={true} offset={-100} duration={500}>
+                Project
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
+                Experience
+              </Link>
+            </li>
+            <li className="navItem">
+              <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+                Contact Me
+              </Link>
+            </li>
+          </ul>
           {/* DarkMode */}
           <div onClick={() => setTheme(colorTheme)} className="flex justify-center items-center mx-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full cursor-pointer shadow">
             {colorTheme === 'light' ? (
