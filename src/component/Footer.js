@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-scroll';
 
 export default function Footer() {
   const form = useRef();
@@ -94,12 +95,34 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row w-1/2 gap-2 md:gap-10">
             <div>
               <h2>Quick Links</h2>
-              <div className="mx-4 flex flex-col gap-3">
-                <div>Home</div>
-                <div>Profile</div>
-                <div>Project</div>
-                <div>Experience</div>
-              </div>
+
+              <ul className="mx-4 flex flex-col cursor-pointer gap-3">
+                <li className="">
+                  <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
+                    Profile
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
+                    Skills
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="Project" spy={true} smooth={true} offset={-100} duration={500}>
+                    Project
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
+                    Experience
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+                    Contact Me
+                  </Link>
+                </li>
+              </ul>
             </div>
             <div className="">
               <h2>Reach Me out on</h2>
