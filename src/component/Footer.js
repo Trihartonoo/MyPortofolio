@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Footer() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dh8tlch', 'template_cwq5lab', form.current, 'ffJB_Sdt7ofG4w2uh').then(
+      (result) => {
+        console.log(result.text);
+        alert('Message send');
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <div className="bg-blue-50 dark:bg-black/50" id="Contact">
       <div className="md:flex flex-col items-center gap-4 px-setting py-10">
         <div className="md:w-1/2">
           <h1 className="mb-2">Contact Me</h1>
-          <form className="flex flex-col gap-2 items-center justify-center px-4">
+          <form className="flex flex-col gap-2 items-center justify-center px-4" ref={form} onSubmit={sendEmail}>
             <div className="w-full">
               <label>Name</label>
               <input
                 type="text"
-                name="text"
+                name="user_name"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-blue-500 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="your name"
               />
@@ -20,7 +38,7 @@ export default function Footer() {
               <label>Email</label>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-blue-500 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="you@example.com"
               />
@@ -33,7 +51,7 @@ export default function Footer() {
                 placeholder="your Message"
               ></textarea>
             </div>
-            <input type="submit" value="Send" className="w-full bg-blue-700 py-2 mt-2 rounded-md text-white " />
+            <input type="submit" value="Send" className="w-full bg-blue-700 py-2 cursor-pointer mt-2 rounded-md text-white " />
           </form>
         </div>
       </div>
