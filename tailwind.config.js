@@ -9,6 +9,8 @@ module.exports = {
       },
       colors: {
         colorGradient: 'linear-gradient(to right, rgb(59,130,246) , rgb(29,78,216));',
+        colorBackground: '#F9F5F0',
+        colorFooter: '#303030',
       },
       height: {
         50: '50vh',

@@ -56,7 +56,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="flex flex-col w-full  px-setting bg-blue-100 dark:bg-black/50 ">
+      <div className="flex flex-col w-full  px-setting bg-colorBackground dark:bg-black/50 ">
         <div className="flex flex-col md:flex-row justify-between w-full gap-2 py-6 ">
           <div className="">
             <h2 className="mb-2">Tes</h2>

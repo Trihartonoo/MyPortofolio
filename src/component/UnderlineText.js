@@ -12,7 +12,7 @@ function UnderlineText() {
   // });
   return (
     <div>
-      <div className="absolute bottom-2 bg-gradient-to-br from-blue-600 to-blue-300 h-2 w-full rounded-md z-0"></div>
+      <div className="absolute bottom-1 bg-gradient-to-t from-gray-900 to-colorBackground h-2 w-full rounded-md z-0"></div>
     </div>
   );
 }
