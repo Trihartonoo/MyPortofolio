@@ -21,7 +21,7 @@ function Navbar() {
   window.addEventListener('scroll', changeBackground);
   return (
     // <nav className="bg-transparent w-full h-14 md:h-16 fixed z-20">
-    <nav className={navbar ? 'bg-colorBackground dark:bg-black/60 shadow-md duration-1000 w-full h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
+    <nav className={navbar ? 'bg-colorBackground dark:bg-gray-900 shadow-md duration-1000 w-full h-14 md:h-16 fixed z-20' : 'bg-transparent w-full h-14 md:h-16 fixed z-20'}>
       <div className="flex mx-3 md:mx-8 lg:mx-28 px-2 lg:px-4 items-center justify-between h-full relative z-20">
         <Link to="Home" spy={true} smooth={true} duration={500}>
           <svg className="w-6 h-6 fill-gray-800 dark:fill-slate-200" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
