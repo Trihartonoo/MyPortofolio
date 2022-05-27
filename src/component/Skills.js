@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import UnderlineText from '../component/UnderlineText';
 import Language from '../Skills/Language';
 import CssFramework from '../Skills/CssFramework';
 import JsFramework from '../Skills/JsFramework';
@@ -12,7 +11,6 @@ export default function Skills() {
     <div className="py-10 md:pt-10 md:pb-20 px-setting " id="Skills">
       <div className="flex flex-col md:flex-row items-end md:items-center justify-between">
         <div className="w-fit h-fit relative overflow-hidden">
-          <UnderlineText />
           <h1>Skills</h1>
         </div>
         <div className="flex gap-1 md:gap-2 text-sm md:text-base my-2">

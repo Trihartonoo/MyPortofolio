@@ -1,5 +1,4 @@
 import React from 'react';
-import UnderlineText from '../component/UnderlineText';
 import Tesfoto from '../Img/TesFoto.jpg';
 
 function Profile() {
@@ -7,7 +6,6 @@ function Profile() {
     <div id="Profile" className="pt-20 md:pt-28 lg:pt-36 px-setting flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-10 lg:gap-20 group ">
       <div className="text-left w-full">
         <div className="w-fit relative ">
-          <UnderlineText />
           <h1>Profile</h1>
         </div>
         <p className="text-sm md:text-base lg:mt-4"> Perkenalkan saya Tri Hartono biasa dipanggil Tri. Saya junior front end development yang sudah mengerjakan beberapa project kecil. </p>

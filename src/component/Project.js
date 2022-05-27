@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import Card from '../Project/Card';
-
-import UnderlineText from '../component/UnderlineText';
 import CardWeb from '../Project/CardWeb';
 import CardDekstop from '../Project/CardDekstop';
 
@@ -20,7 +17,6 @@ function Project() {
     <div className="px-setting" id="Project">
       <div className=" flex flex-col md:flex-row-reverse items-start md:items-center justify-between relative mb-4 ">
         <div className="w-fit h-fit relative overflow-hidden">
-          <UnderlineText />
           <h1>Project</h1>
         </div>
         <div className="flex items-center gap-4 my-2 text-sm md:text-base">

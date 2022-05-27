@@ -21,9 +21,9 @@ export default function Footer() {
   };
 
   return (
-    <div className="" id="Contact">
-      <div className="md:flex flex-col items-center gap-4 px-setting py-10">
-        <div className="md:w-1/2">
+    <>
+      <div className="md:flex flex-col items-center gap-4 px-setting py-10" id="Contact">
+        <div className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 md:p-4">
           <h1 className="mb-2">Contact Me</h1>
           <form className="flex flex-col gap-2 items-center justify-center px-4" ref={form} onSubmit={sendEmail}>
             <div className="w-full">
@@ -52,7 +52,7 @@ export default function Footer() {
                 placeholder="your Message"
               ></textarea>
             </div>
-            <input type="submit" value="Send" className="w-full bg-blue-700 py-2 cursor-pointer mt-2 rounded-md text-white " />
+            <input type="submit" value="Send" className="w-full bg-gray-900 dark:bg-black/50 py-2 cursor-pointer mt-2 rounded-md border-2 border-slate-200 text-white " />
           </form>
         </div>
       </div>
@@ -135,10 +135,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full border-t-2 border-blue-100 py-2 flex items-center justify-center md:justify-start ">
+        <div className="w-full border-t-2 border-gray-900 dark:border-colorBackground py-2 flex items-center justify-center md:justify-start ">
           <h3 className="text-sm md:text-base text-gray-700 dark:text-slate-200">© 2022 Tri Hartono • All Rights Reserved</h3>
         </div>
       </div>
-    </div>
+    </>
   );
 }

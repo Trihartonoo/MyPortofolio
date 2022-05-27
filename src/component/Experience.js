@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import UnderlineText from './UnderlineText';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 function Experience() {
@@ -73,7 +72,6 @@ function Experience() {
   return (
     <div ref={ref} className=" py-10 group px-setting relative" id="Experience">
       <div className=" w-fit mx-auto mb-4 relative z-0">
-        <UnderlineText />
         <h1 className="first-paragraph">Experience</h1>
       </div>
       <div className="first w-full h-1/2  flex justify-end md:justify-start items-center relative">
