@@ -77,9 +77,9 @@ function Experience() {
 
       <div className="first w-full h-1/2  flex justify-end md:justify-start items-center relative">
         <div className="absolute top-0 w-1/2 md:w-full left-0 md:left-1/2 h-full ">
-          <div className="w-1 h-full bg-gray-900 rounded-xl"></div>
+          <div className="w-1 h-full bg-gray-900 rounded-xl dark:bg-colorBackground"></div>
         </div>
-        <div className="md:w-1/2 p-4 relative flex md:justify-center items-center">
+        <div className="md:w-1/2 p-4 md:p-6 relative flex md:justify-center items-center">
           <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
             <div className="font-semibold">Admin & Data entry</div>
             <div className="font-bold">Drym corp</div>
@@ -90,10 +90,10 @@ function Experience() {
         </div>
       </div>
       <div className="first w-full h-1/2  flex justify-end md:justify-end items-center relative">
-        <div className="absolute top-0 w-1/2 md:w-full left-0 md:left-1/2 h-full ">
-          <div className="w-1 h-full bg-gray-900"></div>
+        <div className="absolute -top-1 w-1/2 md:w-full left-0 md:left-1/2 h-full ">
+          <div className="w-1 h-full bg-gray-900 dark:bg-colorBackground rounded-xl"></div>
         </div>
-        <div className="md:w-1/2 p-4 relative flex md:justify-center items-center">
+        <div className="md:w-1/2 p-4 md:p-6 relative flex md:justify-center items-center">
           <div className="absolute w-5 h-5 -left-2 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground"></div>
           <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
             <div className="font-semibold">Project Staff</div>
