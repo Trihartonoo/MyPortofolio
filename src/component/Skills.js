@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import Language from '../Skills/Language';
-import CssFramework from '../Skills/CssFramework';
-import JsFramework from '../Skills/JsFramework';
+import Program from '../Skills/Program';
+import Office from '../Skills/Office';
 import Design from '../Skills/Design';
 
 export default function Skills() {
-  const [isActive, setIsActive] = useState('Language');
+  const [isActive, setIsActive] = useState('Program');
 
   return (
     <div className="py-10 md:pt-10 md:pb-20 px-setting " id="Skills">
@@ -13,15 +12,12 @@ export default function Skills() {
         <div className="w-fit h-fit relative overflow-hidden">
           <h1>Skills</h1>
         </div>
-        <div className="flex gap-1 md:gap-2 text-sm md:text-base my-2">
-          <div onClick={() => setIsActive('Language')} className={isActive === 'Language' ? 'SkillsInActive' : 'Active '}>
-            Language
+        <div className="flex gap-2 md:gap-4 text-sm md:text-base my-2">
+          <div onClick={() => setIsActive('Program')} className={isActive === 'Program' ? 'SkillsInActive' : 'Active '}>
+            Program
           </div>
-          <div onClick={() => setIsActive('CssFramework')} className={isActive === 'CssFramework' ? 'SkillsInActive' : 'Active'}>
-            CssFramework
-          </div>
-          <div onClick={() => setIsActive('JsFramework')} className={isActive === 'JsFramework' ? 'SkillsInActive' : 'Active'}>
-            JsFramework
+          <div onClick={() => setIsActive('Office')} className={isActive === 'Office' ? 'SkillsInActive' : 'Active'}>
+            Ms Office
           </div>
           <div onClick={() => setIsActive('Design')} className={isActive === 'Design' ? 'SkillsInActive' : 'Active'}>
             Design
@@ -29,9 +25,8 @@ export default function Skills() {
         </div>
       </div>
       <div className="my-4">
-        {isActive === 'Language' && <Language />}
-        {isActive === 'CssFramework' && <CssFramework />}
-        {isActive === 'JsFramework' && <JsFramework />}
+        {isActive === 'Program' && <Program />}
+        {isActive === 'Office' && <Office />}
         {isActive === 'Design' && <Design />}
       </div>
     </div>
