@@ -11,7 +11,6 @@ export default function Footer() {
     emailjs.sendForm('service_dh8tlch', 'template_cwq5lab', form.current, 'ffJB_Sdt7ofG4w2uh').then(
       (result) => {
         console.log(result.text);
-        alert('Message send');
       },
       (error) => {
         console.log(error.text);
@@ -41,7 +40,7 @@ export default function Footer() {
                 type="email"
                 name="user_email"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
-                placeholder="you@example.com"
+                placeholder="your Email"
               />
             </div>
             <div className="w-full">
@@ -59,7 +58,7 @@ export default function Footer() {
       <div className="flex flex-col w-full  px-setting bg-colorBackground dark:bg-black/50 ">
         <div className="flex flex-col md:flex-row justify-between w-full gap-2 py-6 ">
           <div className="">
-            <h2 className="mb-2">Tes</h2>
+            <h2 className="mb-2">Tri Hartono</h2>
             <div className="flex flex-col gap-1 md:gap-3 mx-4">
               <div className="flex md:items-center gap-4">
                 <div>

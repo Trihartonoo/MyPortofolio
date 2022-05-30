@@ -75,7 +75,7 @@ function Experience() {
         <h1 className="first-paragraph">Experience</h1>
       </div>
 
-      <div className="first w-full h-1/2  flex justify-end md:justify-start items-center relative">
+      <div className="first w-full h-1/2 overflow-x-hidden flex justify-end md:justify-start items-center relative">
         <div className="absolute top-0 w-1/2 md:w-full left-0 md:left-1/2 h-full ">
           <div className="w-1 h-full bg-gray-900 rounded-xl dark:bg-colorBackground"></div>
         </div>
