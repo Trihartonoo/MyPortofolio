@@ -54,6 +54,9 @@
   .cardSkillsStyle {
     @apply bg-colorBackground shadow-xl flex items-center justify-center p-6 rounded-xl dark:bg-black/50 hover:shadow;
   }
+  .effect-hover {
+    @apply cursor-pointer hover:border-b-2 border-gray-900 dark:border-colorBackground;
+  }
 }
 
 body {

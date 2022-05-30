@@ -67,7 +67,9 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <a href="mailto:Triihartono29@gmail.com">Triihartono29@gmail.com</a>
+                <a className="effect-hover" href="mailto:Triihartono29@gmail.com">
+                  Triihartono29@gmail.com
+                </a>
               </div>
               <div className="flex md:items-center gap-4">
                 <div>
@@ -76,7 +78,9 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <a href="https://goo.gl/maps/fCTnamkeqPQxB6AC6">Cipedak, Jagakarsa, Jakarta Selatan</a>
+                <a className="effect-hover" href="https://goo.gl/maps/fCTnamkeqPQxB6AC6">
+                  Cipedak, Jagakarsa, Jakarta Selatan
+                </a>
               </div>
             </div>
           </div>
@@ -86,27 +90,27 @@ export default function Footer() {
 
               <ul className="mx-4 flex flex-col cursor-pointer gap-3">
                 <li className="">
-                  <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
+                  <Link className="effect-hover" to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
                     Profile
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
+                  <Link className="effect-hover" to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
                     Skills
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="Project" spy={true} smooth={true} offset={-100} duration={500}>
+                  <Link className="effect-hover" to="Project" spy={true} smooth={true} offset={-100} duration={500}>
                     Project
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
+                  <Link className="effect-hover" to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
                     Experience
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+                  <Link className="effect-hover" to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
                     Contact Me
                   </Link>
                 </li>
@@ -115,13 +119,13 @@ export default function Footer() {
             <div className="">
               <h2>Reach Me out on</h2>
               <div className="mx-4 flex flex-col gap-3">
-                <a href="https://www.facebook.com/profile.php?id=100064153174194" className="w-fit cursor-pointer hover:border-b-2 border-gray-900 dark:border-colorGradient">
+                <a href="https://www.facebook.com/profile.php?id=100064153174194" className="w-fit effect-hover">
                   Facebook
                 </a>
-                <a href="https://www.instagram.com/hrtn29/" className="w-fit cursor-pointer hover:border-b-2 border-gray-900 dark:border-colorGradient">
+                <a href="https://www.instagram.com/hrtn29/" className="w-fit effect-hover">
                   Instagram
                 </a>
-                <a href="https://github.com/Trihartonoo" className="w-fit cursor-pointer hover:border-b-2 border-gray-900 dark:border-colorGradient">
+                <a href="https://github.com/Trihartonoo" className="w-fit effect-hover">
                   Github
                 </a>
               </div>
@@ -129,7 +133,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full border-t-2 border-gray-900 dark:border-colorBackground py-2 flex items-center justify-center md:justify-start ">
-          <h3 className="text-sm md:text-base text-gray-700 dark:text-slate-200">© 2022 Tri Hartono • All Rights Reserved</h3>
+          <h3 className="text-sm md:text-base text-gray-800 dark:text-slate-200">© 2022 Tri Hartono • All Rights Reserved</h3>
         </div>
       </div>
     </>
