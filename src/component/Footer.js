@@ -11,6 +11,7 @@ export default function Footer() {
     emailjs.sendForm('service_dh8tlch', 'template_cwq5lab', form.current, 'ffJB_Sdt7ofG4w2uh').then(
       (result) => {
         console.log(result.text);
+        alert('Send Succes');
       },
       (error) => {
         console.log(error.text);
@@ -21,7 +22,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="md:flex flex-col items-center gap-4 px-setting py-10" id="Contact">
+      <div className="md:flex flex-col items-center gap-4 px-setting py-10 relative" id="Contact">
         <div className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 md:p-4">
           <h1 className="mb-2">Contact Me</h1>
           <form className="flex flex-col gap-2 items-center justify-center px-4" ref={form} onSubmit={sendEmail}>
@@ -31,7 +32,7 @@ export default function Footer() {
                 type="text"
                 name="user_name"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
-                placeholder="your name"
+                required
               />
             </div>
             <div className="w-full">
@@ -40,15 +41,15 @@ export default function Footer() {
                 type="email"
                 name="user_email"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
-                placeholder="your Email"
+                required
               />
             </div>
             <div className="w-full">
               <label className="">Message</label>
               <textarea
                 name="message"
-                className="mt-1 px-3 py-4 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
-                placeholder="your Message"
+                className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
+                required
               ></textarea>
             </div>
             <input type="submit" value="Send" className="w-full bg-gray-900 dark:bg-black/50 py-2 cursor-pointer mt-2 rounded-md border-2 border-slate-200 text-white " />
