@@ -14,7 +14,7 @@ export default function Skills() {
         </div>
         <div className="flex gap-2 md:gap-4 text-sm md:text-base my-2">
           <div onClick={() => setIsActive('Program')} className={isActive === 'Program' ? 'SkillsInActive' : 'Active '}>
-            Program
+            Frontend Dev
           </div>
           <div onClick={() => setIsActive('Office')} className={isActive === 'Office' ? 'SkillsInActive' : 'Active'}>
             Ms Office
