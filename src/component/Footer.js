@@ -8,7 +8,7 @@ export default function Footer() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dh8tlch', 'template_cwq5lab', form.current, 'ffJB_Sdt7ofG4w2uh').then(
+    emailjs.sendForm('service_vhew7td', 'template_7pa2cub', form.current, 'QLDJQwM4vHWG4-3lR').then(
       (result) => {
         console.log(result.text);
         alert('Send Succes');
@@ -32,6 +32,7 @@ export default function Footer() {
                 type="text"
                 name="user_name"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="Your Name"
                 required
               />
             </div>
@@ -41,6 +42,7 @@ export default function Footer() {
                 type="email"
                 name="user_email"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="Your email@gmail.com"
                 required
               />
             </div>
@@ -49,6 +51,7 @@ export default function Footer() {
               <textarea
                 name="message"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-gray-900  ring-gray-900 dark:ring-colorBackground text-gray-900 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="Your Message"
                 required
               ></textarea>
             </div>
@@ -119,13 +122,13 @@ export default function Footer() {
             <div className="">
               <h2>Reach Me out on</h2>
               <div className="mx-4 flex flex-col gap-3">
-                <a href="https://www.facebook.com/profile.php?id=100064153174194" className="w-fit effect-hover">
+                <a href="https://www.facebook.com/profile.php?id=100064153174194" className=" effect-hover">
                   Facebook
                 </a>
-                <a href="https://www.instagram.com/hrtn29/" className="w-fit effect-hover">
+                <a href="https://www.instagram.com/hrtn29/" className=" effect-hover">
                   Instagram
                 </a>
-                <a href="https://github.com/Trihartonoo" className="w-fit effect-hover">
+                <a href="https://github.com/Trihartonoo" className=" effect-hover">
                   Github
                 </a>
               </div>

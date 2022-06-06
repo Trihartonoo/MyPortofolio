@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <>
-      <div className="dark:bg-gray-900 overflow-x-hidden bg-colorBackground text-gray-800 dark:text-slate-200 transition duration-500" id="Home">
+      <div className="dark:bg-gray-900 overflow-x-hidden bg-colorBackground text-gray-800 dark:text-slate-200 transition duration-500 flex items-center justify-center" id="Home">
         <div className={coba}>
           <div className="text-5xl md:text-8xl lg:text-9xl text-gray-900 dark:text-slate-100 relative">
             <div className="w-10 h-full md:w-16 md:h-16 bg-colorBackground dark:bg-gray-900 border-4 border-gray-900 dark:border-colorBackground z-0 rounded-full absolute -top-2 -left-2"></div>
