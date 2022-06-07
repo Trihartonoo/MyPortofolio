@@ -4,10 +4,10 @@
 
 @layer base {
   h1 {
-    @apply text-2xl md:text-4xl relative;
+    @apply text-2xl md:text-4xl 2xl:text-6xl relative;
   }
   h2 {
-    @apply font-semibold text-base md:text-xl;
+    @apply text-base md:text-xl 2xl:text-2xl;
   }
 }
 @layer components {

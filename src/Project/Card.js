@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '../component/Home';
 
 function Card(props) {
   return (
@@ -8,8 +7,8 @@ function Card(props) {
         <img className="w-full hover:scale-110 transition duration-500 rounded-xl shadow-xl" src={props.imageUrl} alt="Project Picture" srcSet="" />
       </div>
       <div className=" my-3">
-        <div className="text-sm font-semibold">{props.title}</div>
-        <div className="text-sm gap-4">{props.ket}</div>
+        <div className="text-sm md:text-base font-semibold">{props.title}</div>
+        <div className="text-sm md:text-base">{props.ket}</div>
       </div>
       <div className="text-sm rounded-md transition duration-300 flex gap-2 items-center">
         <a

@@ -83,9 +83,10 @@ function Experience() {
           <div className="absolute w-5 h-5 -left-2 md:hidden rounded-full border-2 border-gray-900 bg-colorBackground"></div>
           <div className="absolute w-5 h-5 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground hidden md:block"></div>
           <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
-            <div className="font-semibold">Admin & Data entry</div>
-            <div className="font-bold">Drym corp</div>
-            <div>2021 - 2022. Bertanggung jawab penuh atas pengelolaan data di DRYM, menangani semua penjualan produk transaksi, mengelola data perusahaan menggunakan MS.Excel dan Spreadsheet di GoogleDrive</div>
+            <h2 className="font-semibold">Admin & Data entry</h2>
+            <h2 className="font-bold mb-2">Drym corp</h2>
+            <div className="font-bold">1 Year</div>
+            <div>2021 - 2022. Fully responsible for data management at DRYM, handling all product sales transactions, managing company data using MS.Excel and Spreadsheets on GoogleDrive</div>
           </div>
         </div>
       </div>
@@ -96,10 +97,10 @@ function Experience() {
         <div className="md:w-1/2 p-4 md:p-6 relative flex md:justify-center items-center">
           <div className="absolute w-5 h-5 -left-2 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground"></div>
           <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
-            <div className="font-semibold">Project Staff</div>
-            <div className="font-bold">Indonesia International Education Foundation - General Affair</div>
-            <div>Indonesia International Education Foundation - General Affair</div>
-            <div>2016 - 2017. Bertanggung jawab selama project berlangsung dengan menyiapkan kebutuhan, baik alat maupun desain.</div>
+            <h2 className="font-semibold">Project Staff</h2>
+            <h2 className="font-bold mb-2">Indonesia International Education Foundation - General Affair</h2>
+            <div className="font-bold">4 month</div>
+            <div>2016 - 2017. Responsible during the project by preparing the needs, both tools and designs</div>
           </div>
         </div>
       </div>

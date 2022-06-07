@@ -62,7 +62,7 @@ export default function Footer() {
       <div className="flex flex-col w-full  px-setting bg-colorBackground dark:bg-black/50 ">
         <div className="flex flex-col md:flex-row justify-between w-full gap-2 py-6 ">
           <div className="">
-            <h2 className="mb-2">Tri Hartono</h2>
+            <div className="text-xl 2xl:text-3xl mb-2">Tri Hartono</div>
             <div className="flex flex-col gap-1 md:gap-3 mx-4">
               <div className="flex md:items-center gap-4">
                 <div>
@@ -89,9 +89,9 @@ export default function Footer() {
           </div>
           <div className="flex flex-col md:flex-row w-1/2 gap-2 md:gap-10">
             <div>
-              <h2>Quick Links</h2>
+              <div className="text-xl 2xl:text-3xl mb-2">Quick Links</div>
 
-              <ul className="mx-4 flex flex-col cursor-pointer gap-3">
+              <ul className="mx-4 flex flex-col cursor-pointer gap-3 2xl:text-2xl">
                 <li className="">
                   <Link className="effect-hover" to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
                     Profile
@@ -120,7 +120,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="">
-              <h2>Reach Me out on</h2>
+              <div className="text-xl 2xl:text-3xl mb-2">Get in Touch</div>
               <div className="mx-4 flex flex-col gap-3">
                 <a href="https://www.facebook.com/profile.php?id=100064153174194" className=" effect-hover">
                   Facebook

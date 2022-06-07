@@ -33,7 +33,7 @@ function Navbar() {
         </Link>
 
         <div className="flex items-center justify-center md:gap-2 lg:gap-4">
-          <ul className="hidden cursor-pointer md:flex items-center justify-center gap-4">
+          <ul className="hidden cursor-pointer md:flex 2xl:text-2xl items-center justify-center gap-4">
             <li className="navItem">
               <Link to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
                 Profile

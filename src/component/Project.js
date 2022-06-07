@@ -19,18 +19,18 @@ function Project() {
         <div className="w-fit h-fit relative overflow-hidden">
           <h1>Project</h1>
         </div>
-        <div className="flex items-center gap-4 my-2 text-sm md:text-base">
+        <div className="flex items-center gap-4 my-2 text-sm md:text-base 2xl:text-2xl">
           <div onClick={() => setIsActive('Web')} className={isActive === 'Web' ? 'SkillsInActive' : 'Active '}>
             Web
           </div>
-          <div onClick={() => setIsActive('Dekstop')} className={isActive === 'Dekstop' ? 'SkillsInActive' : 'Active '}>
+          {/* <div onClick={() => setIsActive('Dekstop')} className={isActive === 'Dekstop' ? 'SkillsInActive' : 'Active '}>
             Dekstop Aplication
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="">
         {isActive === 'Web' && <CardWeb />}
-        {isActive === 'Dekstop' && <CardDekstop />}
+        {/* {isActive === 'Dekstop' && <CardDekstop />} */}
       </div>
     </div>
   );

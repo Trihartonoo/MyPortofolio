@@ -12,7 +12,7 @@ export default function Skills() {
         <div className="w-fit h-fit relative overflow-hidden">
           <h1>Skills</h1>
         </div>
-        <div className="flex gap-2 md:gap-4 text-sm md:text-base my-2">
+        <div className="flex gap-2 md:gap-4 text-sm md:text-base 2xl:text-2xl my-2">
           <div onClick={() => setIsActive('Program')} className={isActive === 'Program' ? 'SkillsInActive' : 'Active '}>
             Frontend Dev
           </div>
