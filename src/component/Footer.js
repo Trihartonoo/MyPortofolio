@@ -71,7 +71,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <a className="effect-hover" href="mailto:Triihartono29@gmail.com">
-                  Triihartono29@gmail.com
+                  29trihartono@gmail.com
                 </a>
               </div>
               <div className="flex md:items-center gap-4">

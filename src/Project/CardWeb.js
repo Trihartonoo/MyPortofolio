@@ -16,8 +16,6 @@ function CardWeb() {
         toGithub="https://github.com/Trihartonoo/Arrayid-Wumbo"
       />
       <Card imageUrl={naufalSatu} title="Design by Naufal@array.id" ket="Slicing Design array id (Tailwindcss & Aos liblary)" toUrl="https://trihartonoo.github.io/Arrayid-MSTSKP/" toGithub="https://github.com/Trihartonoo/Arrayid-MSTSKP" />
-      <Card imageUrl={JustTravel} title="Design by Naufal@array.id" toUrl="https://trihartonoo.github.io/Arrayid-MSTSKP/" toGithub="https://trihartonoo.github.io/MyPortofolio" />
-      <Card imageUrl={RumahImpian} title="Design by Me" toUrl="https://trihartonoo.github.io/Arrayid-MSTSKP/" toGithub="https://trihartonoo.github.io/MyPortofolio" />
     </div>
   );
 }

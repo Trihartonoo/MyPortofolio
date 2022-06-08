@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CardWeb from '../Project/CardWeb';
-import CardDekstop from '../Project/CardDekstop';
+import CardDesign from '../Project/CardDesign';
 
 function Project() {
   // constructor() {
@@ -23,14 +23,14 @@ function Project() {
           <div onClick={() => setIsActive('Web')} className={isActive === 'Web' ? 'SkillsInActive' : 'Active '}>
             Web
           </div>
-          {/* <div onClick={() => setIsActive('Dekstop')} className={isActive === 'Dekstop' ? 'SkillsInActive' : 'Active '}>
-            Dekstop Aplication
-          </div> */}
+          <div onClick={() => setIsActive('Design')} className={isActive === 'Design' ? 'SkillsInActive' : 'Active '}>
+            Design
+          </div>
         </div>
       </div>
       <div className="">
         {isActive === 'Web' && <CardWeb />}
-        {/* {isActive === 'Dekstop' && <CardDekstop />} */}
+        {isActive === 'Design' && <CardDesign />}
       </div>
     </div>
   );
