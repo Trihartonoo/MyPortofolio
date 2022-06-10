@@ -91,33 +91,27 @@ export default function Footer() {
             <div>
               <div className="text-xl 2xl:text-3xl mb-2">Quick Links</div>
 
-              <ul className="mx-4 flex flex-col cursor-pointer gap-3 2xl:text-2xl">
-                <li className="">
-                  <Link className="effect-hover" to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
-                    Profile
-                  </Link>
-                </li>
-                <li className="">
-                  <Link className="effect-hover" to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
-                    Skills
-                  </Link>
-                </li>
-                <li className="">
-                  <Link className="effect-hover" to="Project" spy={true} smooth={true} offset={-100} duration={500}>
-                    Project
-                  </Link>
-                </li>
-                <li className="">
-                  <Link className="effect-hover" to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
-                    Experience
-                  </Link>
-                </li>
-                <li className="">
-                  <Link className="effect-hover" to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
-                    Contact Me
-                  </Link>
-                </li>
-              </ul>
+              <div className="mx-4 flex flex-col cursor-pointer gap-3 2xl:text-2xl no-underline">
+                <Link className="effect-hover" to="Profile" spy={true} smooth={true} offset={-100} duration={500}>
+                  Profile
+                </Link>
+
+                <Link className="effect-hover" to="Skills" spy={true} smooth={true} offset={-100} duration={500}>
+                  Skills
+                </Link>
+
+                <Link className="effect-hover" to="Project" spy={true} smooth={true} offset={-100} duration={500}>
+                  Project
+                </Link>
+
+                <Link className="effect-hover" to="Experience" spy={true} smooth={true} offset={-100} duration={500}>
+                  Experience
+                </Link>
+
+                <Link className="effect-hover" to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+                  Contact Me
+                </Link>
+              </div>
             </div>
             <div className="">
               <div className="text-xl 2xl:text-3xl mb-2">Get in Touch</div>
