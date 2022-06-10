@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortofolio/static/css/main.2d1c3501.css",
-    "main.js": "/MyPortofolio/static/js/main.67b2f523.js",
+    "main.css": "/MyPortofolio/static/css/main.a6a00cfc.css",
+    "main.js": "/MyPortofolio/static/js/main.91cf9bda.js",
     "static/js/787.c97c7d0e.chunk.js": "/MyPortofolio/static/js/787.c97c7d0e.chunk.js",
     "static/media/RumahImpian.png": "/MyPortofolio/static/media/RumahImpian.543d8eac853dab8c5684.png",
     "static/media/JustTravel.png": "/MyPortofolio/static/media/JustTravel.d671a1ccbb093f214a79.png",
@@ -9,12 +9,12 @@
     "static/media/naufalSatu.png": "/MyPortofolio/static/media/naufalSatu.cccbd345901961ed2f01.png",
     "static/media/TesFoto.jpg": "/MyPortofolio/static/media/TesFoto.ec741efc6a8b28a4baec.jpg",
     "index.html": "/MyPortofolio/index.html",
-    "main.2d1c3501.css.map": "/MyPortofolio/static/css/main.2d1c3501.css.map",
-    "main.67b2f523.js.map": "/MyPortofolio/static/js/main.67b2f523.js.map",
+    "main.a6a00cfc.css.map": "/MyPortofolio/static/css/main.a6a00cfc.css.map",
+    "main.91cf9bda.js.map": "/MyPortofolio/static/js/main.91cf9bda.js.map",
     "787.c97c7d0e.chunk.js.map": "/MyPortofolio/static/js/787.c97c7d0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1c3501.css",
-    "static/js/main.67b2f523.js"
+    "static/css/main.a6a00cfc.css",
+    "static/js/main.91cf9bda.js"
   ]
 }
