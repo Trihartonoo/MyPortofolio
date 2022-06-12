@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 // import { Link } from 'react-router-dom';
 import useDarkMode from '../Hook/useDarkMode';
+import { motion } from 'framer-motion';
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -11,6 +12,11 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  // const variants =()=> {
+  //   navItemLeft : {
+
+  //   }
+  // }
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
@@ -95,38 +101,40 @@ function Navbar() {
         </div>
       </div>
       {/* Menu Navbar */}
-      <ul
+      <div
         className={
           'fixed transition flex flex-col w-full justify-center gap-10 px-setting bg-colorBackground dark:bg-gray-900 text-gray-800 dark:text-slate-200 h-screen top-0 z-10  duration-1000 translate-x-full ' +
           (navbarOpen ? ' translate-x-1/2' : 'translate-full')
         }
       >
-        <li className="navItem">
-          <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
-            Profile
-          </Link>
-        </li>
-        <li className="navItem">
-          <Link to="Skills" spy={true} smooth={true} offset={-50} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="navItem">
-          <Link to="Project" spy={true} smooth={true} offset={-50} duration={500}>
-            Project
-          </Link>
-        </li>
-        <li className="navItem">
-          <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
-            Experience
-          </Link>
-        </li>
-        <li className="navItem">
-          <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
-            Contact Me
-          </Link>
-        </li>
-      </ul>
+        <motion.ul animate={navbarOpen ? { x: 0 } : { x: '100vw' }} transition={{ duration: 1 }} className="flex flex-col gap-10 w-full">
+          <li className="navItem">
+            <Link to="Profile" spy={true} smooth={true} offset={-50} duration={500}>
+              Profile
+            </Link>
+          </li>
+          <li className="navItem">
+            <Link to="Skills" spy={true} smooth={true} offset={-50} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className="navItem">
+            <Link to="Project" spy={true} smooth={true} offset={-50} duration={500}>
+              Project
+            </Link>
+          </li>
+          <li className="navItem">
+            <Link to="Experience" spy={true} smooth={true} offset={-50} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li className="navItem">
+            <Link to="Contact" spy={true} smooth={true} offset={-50} duration={500}>
+              Contact Me
+            </Link>
+          </li>
+        </motion.ul>
+      </div>
     </nav>
   );
 }

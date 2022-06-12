@@ -2,9 +2,9 @@ import React from 'react';
 
 function Card(props) {
   return (
-    <div className=" shadow-xl bg-colorBackground dark:bg-black/50 text-gray-900 dark:text-colorBackground rounded-lg overflow-hidden transition-all duration-500 hover:shadow relative p-4">
+    <div className=" hover:scale-110 shadow-xl bg-colorBackground dark:bg-black/50 text-gray-900 dark:text-colorBackground rounded-lg overflow-hidden transition-all duration-500 relative p-4">
       <div className="">
-        <img className="w-full hover:scale-110 transition duration-500 rounded-xl shadow-xl" src={props.imageUrl} alt="Project Picture" srcSet="" />
+        <img className="w-full transition duration-500 rounded-xl shadow-xl" src={props.imageUrl} alt="Project Picture" srcSet="" />
       </div>
       <div className=" my-3">
         <div className="text-sm md:text-base font-semibold">{props.title}</div>

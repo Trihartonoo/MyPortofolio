@@ -7,17 +7,26 @@ import Bootstrap from '../Img/bootstrap.png';
 import CardSkills from './cardSkills';
 import ReactJS from '../Img/reactJs.png';
 import NodeJs from '../Img/NodeJS.png';
+import { motion } from 'framer-motion';
 
 function Program() {
   return (
     <div className="Skills-grid">
-      <CardSkills imgUrl={Html} />
-      <CardSkills imgUrl={Css} />
-      <CardSkills imgUrl={JavaScript} />
-      <CardSkills imgUrl={Bootstrap} />
-      <CardSkills imgUrl={Tailwindcss} />
-      <CardSkills imgUrl={ReactJS} />
-      <CardSkills imgUrl={NodeJs} />
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.2 }}>
+        <CardSkills imgUrl={Html} />
+      </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.4 }}>
+        <CardSkills imgUrl={Css} />
+      </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.6 }}>
+        <CardSkills imgUrl={JavaScript} />
+      </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.8 }}>
+        <CardSkills imgUrl={Bootstrap} />
+      </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1 }}>
+        <CardSkills imgUrl={Tailwindcss} />
+      </motion.div>
     </div>
   );
 }

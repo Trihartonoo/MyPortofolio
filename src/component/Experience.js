@@ -1,74 +1,40 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Experience() {
-  // const [innerHeight, useInnerHeight] = window();
-  // gsap
-  //   .timeline({
-  //     scrollTrigger: {
-  //       trigger: '.shoe',
-  //       start: 'center center',
-  //       end: 'bottom top',
-  //       scrub: true,
-  //       pin: true,
-  //     },
-  //   })
-  //   .from('.midsole', { y: useInnerHeight * 1.5 })
-  //   .from('.outsole', { y: useInnerHeight * 1.5 });
-
-  const ref = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
-  // useLayoutEffect(() => {
-  //   let element = ref.current;
-  //   let svg = document.getElementsByClassName('svg-path')[0];
-  //   const length = svg.getTotalLength();
-
-  //   console.log(length);
-  //   //start
-  //   svg.style.stokeDasharray = length;
-  //   //hide
-  //   svg.style.stokeDashoffset = length;
-
-  //   gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: element,
-  //       start: 'top center',
-  //       end: 'bottom bottom',
-  //       onUpdate: (self) => {
-  //         const draw = length * self.progress;
-
-  //         svg.style.strokeDashoffset = length - draw;
-  //       },
-  //     },
-  //   });
-
-  //   return () => {};
-  // }, []);
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
   useEffect(() => {
-    const element = ref.current;
-    gsap.fromTo(
-      element.querySelectorAll('.first-paragraph'),
-      {
-        opacity: 0,
-        y: -100,
+    if (inView) {
+      animation.start('visible');
+    }
+    if (!inView) {
+      animation.start('hidden');
+    }
+    // console.log('use Effect hook, inView =', inView);
+  }, [inView]);
+
+  const variants = {
+    hidden: { scale: 0 },
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 0.8,
       },
-      {
-        opacity: 1,
-        repeat: 1,
-        y: 0,
-      }
-    );
-  }, []);
-  // useEffect(() => {
-  //   const element = ref.current;
-  //   gsap.from(element.querySelectorAll('.pengalaman'), {
-  //     scale: 1,
-  //     duration: 2,
-  //     ease: 'none',
-  //     delay: 5,
-  //   });
-  // }, []);
+    },
+  };
+  const variantsImg = {
+    hidden: { scale: 0 },
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
   return (
     <div ref={ref} className=" py-10 group px-setting relative" id="Experience">
       <div className=" w-fit mx-auto mb-4 relative z-0">
@@ -80,14 +46,15 @@ function Experience() {
           <div className="w-1 h-full bg-gray-900 dark:bg-colorBackground rounded-xl"></div>
         </div>
         <div className="md:w-1/2 p-4 md:p-6 relative flex md:justify-center items-center">
-          <div className="absolute w-5 h-5 -left-2 md:hidden rounded-full border-2 border-gray-900 bg-colorBackground"></div>
-          <div className="absolute w-5 h-5 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground hidden md:block"></div>
-          <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
+          <motion.div animate={animation} initial="hidden" variants={variants} className=" absolute w-5 h-5 -left-2 md:hidden rounded-full border-2 border-gray-900 bg-colorBackground"></motion.div>
+          <motion.div animate={animation} initial="hidden" variants={variants} className="absolute w-5 h-5 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground hidden md:block"></motion.div>
+
+          <motion.div animate={animation} initial="hidden" variants={variants} className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
             <h2 className="font-semibold">Admin & Data entry</h2>
             <h2 className="font-bold mb-2">Drym corp</h2>
             <div className="font-bold">1 Year</div>
             <div>2021 - 2022. Fully responsible for data management at DRYM, handling all product sales transactions, managing company data using MS.Excel and Spreadsheets on GoogleDrive</div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="first w-full h-1/2  flex justify-end md:justify-end items-center relative">
@@ -95,13 +62,13 @@ function Experience() {
           <div className="w-1 h-full bg-gray-900 dark:bg-colorBackground rounded-xl"></div>
         </div>
         <div className="md:w-1/2 p-4 md:p-6 relative flex md:justify-center items-center">
-          <div className="absolute w-5 h-5 -left-2 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground"></div>
-          <div className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
+          <motion.div animate={animation} initial="hidden" variants={variantsImg} className="absolute w-5 h-5 -left-2 md:-right-3 rounded-full border-2 border-gray-900 bg-colorBackground"></motion.div>
+          <motion.div animate={animation} initial="hidden" variants={variantsImg} className="text-sm md:text-base shadow-xl hover:shadow p-4 bg-white/50 dark:bg-gray-900 dark:border-2 border-slate-200 rounded-xl">
             <h2 className="font-semibold">Project Staff</h2>
             <h2 className="font-bold mb-2">Indonesia International Education Foundation - General Affair</h2>
             <div className="font-bold">4 month</div>
             <div>2016 - 2017. Responsible during the project by preparing the needs, both tools and designs</div>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* <div className="w-full h-1/2  flex justify-end items-center relative bg-slate-200">
