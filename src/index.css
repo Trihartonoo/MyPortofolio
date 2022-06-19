@@ -36,7 +36,7 @@
     @apply translate-x-0 duration-1000;
   }
   .Skills-grid {
-    @apply grid items-center justify-center gap-4 grid-cols-3 md:grid-cols-5 lg:grid-cols-8;
+    @apply grid grid-cols-4 gap-4 md:grid-cols-5 lg:grid-cols-8;
   }
   .Active {
     @apply text-gray-700 hover:text-gray-900 cursor-pointer dark:text-slate-200;
@@ -52,7 +52,7 @@
     @apply border-gray-900 text-black border-b-2 hover:text-gray-900 dark:border-colorBackground cursor-pointer dark:text-slate-200;
   }
   .cardSkillsStyle {
-    @apply bg-colorBackground shadow-xl flex items-center justify-center p-6 rounded-xl dark:bg-black/50 hover:shadow;
+    @apply bg-colorBackground shadow-xl flex items-center justify-center p-4 w-full md:w-3/4 rounded-xl dark:bg-black/50 hover:shadow;
   }
   .effect-hover {
     @apply w-fit cursor-pointer hover:border-b-2 border-gray-900 dark:border-colorBackground no-underline;

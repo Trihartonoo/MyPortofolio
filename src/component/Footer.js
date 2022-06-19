@@ -23,8 +23,10 @@ export default function Footer() {
   return (
     <>
       <div className="md:flex flex-col items-center gap-4 px-setting py-10 relative" id="Contact">
-        <div className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 md:p-4">
-          <h1 className="mb-2">Contact Me</h1>
+        <div className="absolute top-0 rounded-md bg-colorBackground dark:bg-gray-900 border-2 border-gray-900 p-2 dark:border-slate-200">
+          <h1 className="mb-2 dark:text-white text-gray-900">Contact Me</h1>
+        </div>
+        <div className="md:w-1/2 border-2 border-gray-900 p-2 dark:border-slate-200 py-6 px-4 md:px-8 md:py-10 rounded-md">
           <form className="flex flex-col gap-2 items-center justify-center px-4" ref={form} onSubmit={sendEmail}>
             <div className="w-full">
               <label>Name</label>

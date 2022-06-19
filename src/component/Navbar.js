@@ -103,7 +103,7 @@ function Navbar() {
       {/* Menu Navbar */}
       <div
         className={
-          'fixed transition flex flex-col w-full justify-center gap-10 px-setting bg-colorBackground dark:bg-gray-900 text-gray-800 dark:text-slate-200 h-screen top-0 z-10  duration-1000 translate-x-full ' +
+          'fixed transition flex flex-col w-full justify-center gap-10 px-setting bg-colorBackground dark:bg-gray-900 text-gray-800 dark:text-slate-200 h-screen top-0 z-10 md:hidden  duration-1000 translate-x-full ' +
           (navbarOpen ? ' translate-x-1/2' : 'translate-full')
         }
       >

@@ -27,6 +27,12 @@ function Program() {
       <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1 }}>
         <CardSkills imgUrl={Tailwindcss} />
       </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.2 }}>
+        <CardSkills imgUrl={NodeJs} />
+      </motion.div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.4 }}>
+        <CardSkills imgUrl={ReactJS} />
+      </motion.div>
     </div>
   );
 }
